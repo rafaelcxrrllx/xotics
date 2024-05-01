@@ -1,0 +1,23 @@
+footer {
+    text-align: center;
+}
+footer {
+    color: white;
+    margin-left: 20%;
+    margin-right: 20%;
+    line-height: 200%;
+}
+
+footer h2 {
+    font-size: 40px;
+}
+
+#copyright {
+    color: white;
+    font-size: 13px;
+    padding-bottom: 50px;
+}
+
+footer img {
+    width: 30px;
+}

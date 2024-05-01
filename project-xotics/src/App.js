@@ -2,6 +2,7 @@ import './App.css';
 import Nav from './Nav';
 import hero from './assets/hero-image.svg'
 import Featured from './Featured';
+import Footer from './footer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <button className='main-button'> Shop all</button>
       </div>
       <Featured/>
+      <Footer/>
     </div>
   );
 }

@@ -3,7 +3,7 @@ body {
     padding: 0;
 }
 .navbar {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -66,7 +66,7 @@ body {
         width: 150px; /* Adjust the width of your logo */
     }
 
-    
+
     
   }
 
