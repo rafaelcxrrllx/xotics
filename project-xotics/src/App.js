@@ -4,9 +4,11 @@ import hero from './assets/hero-image.svg'
 import Featured from './Featured';
 import Footer from './footer';
 
+
 function App() {
   return (
     <div className="container">
+      
       <Nav/>
       <div className='hero-image'>
         <img src={hero} alt='A white Corvette parked inside of a street tunnel'/>
