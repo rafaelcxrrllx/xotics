@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Nav from './Nav';
+import hero from './assets/hero-image.jpg'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      {/* <Nav/> */}
+      <nav>
+        
+      </nav>
+      <div className='hero-image'>
+        <img src={hero} alt='A white Corvette parked inside of a street tunnel'/>
+      </div>
+      <div>
+        <h1>Elevate Your Ride</h1>
+        <button> Shop All</button>
+      </div>
     </div>
   );
 }
