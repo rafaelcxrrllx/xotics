@@ -26,6 +26,7 @@ body {
     display: flex;
     gap: 33px; /* Adjust the space between links */
     padding-right: 50px;
+    text-decoration: none;
   }
   
   .nav-links li a {

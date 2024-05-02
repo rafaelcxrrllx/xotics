@@ -1,7 +1,5 @@
 import './shop.css';
 import Nav from './Nav';
-import hero from './assets/hero-image.svg'
-import Featured from './Featured';
 import Footer from './footer';
 import plate from './assets/corvette-plate.svg'
 
@@ -11,7 +9,7 @@ function Shop() {
     <Nav/>
     <div className='shop-container'>
         <div className='left-header'>    
-            <h2>Products</h2>
+            <h2>Shop</h2>
         </div>
         <div className='item-container'>
             <img src={plate} alt="A license plate frame"/>
@@ -24,6 +22,7 @@ function Shop() {
             </div>
         </div>
     </div>
+    <Footer/>
     </div>
   );
 }
