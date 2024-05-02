@@ -2,24 +2,20 @@
 
 .corvette-plate-container {
     background-color: white;
-    width: 100%;
     padding-left: 7%;
-    padding-top: 3%;
+    padding-top: 5%;
     padding-bottom: 3%;
+    padding-right: 7%;
     display: inline-flex;
-}
-
-.corvette-plate-container img {
-    width: 70%;
-    border-radius: 20px;
+    overflow-x: hidden;
 }
 
 .corvette-plate-text {
     color: black;
     width: 100%;
     margin-left: 3%;
+    margin-right: 3%;
     overflow: hidden;
-    margin-right: 25%;
     font-size: 25px;
 
 }
@@ -37,3 +33,139 @@
 .buttons {
     width: 100px;
 }
+
+.buy-it-now {
+    display: flex;
+    width: 25vw;
+    padding: 16px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 45px;
+    color: white;
+    font-size: large;
+    background: var(--WF-Base-800, #158CA4);
+    border-style: none;
+  }
+
+  .add-to-cart {  
+    width: 25vw; 
+    /* Need to use vw for all buttons when refactoring */
+    padding: 16px 14px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 45px;
+    color: black;
+    font-size: large;
+    border-style: none;
+    border-color: #000;
+    border-style: solid;
+    background-color: white;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+#description {
+    margin-top: 30px;
+    line-height: 2;
+}
+
+.price {
+    font-size: 20px;
+}
+
+@media (max-width: 600px) {
+    .corvette-plate-container {
+        background-color: white;
+        display: block;
+        overflow-x: hidden;
+        padding-top: 15%;
+    }
+
+
+    .corvette-plate-text h2{
+        margin-top: 10%;
+        color: black;
+        width: 100%;
+        overflow: hidden;
+        line-height: 1.4;
+        font-size: 35px;
+    
+    }
+
+    .buy-it-now {
+        display: flex;
+        width: 80vw;
+        padding: 16px 14px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        border-radius: 45px;
+        color: white;
+        font-size: large;
+        background: var(--WF-Base-800, #158CA4);
+        border-style: none;
+      }
+    
+      .add-to-cart {  
+        width: 80vw; 
+        padding: 16px 14px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 45px;
+        color: black;
+        font-size: large;
+        border-style: none;
+        border-color: #000;
+        border-style: solid;
+        background-color: white;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+  }
+
+  @media (min-width: 601px) and (max-width: 1024px) {
+
+    .corvette-plate-container {
+        background-color: white;
+        padding-left: 7%;
+        padding-top: 5%;
+        padding-bottom: 3%;
+        padding-right: 7%;
+        display: block;
+        overflow-x: hidden;
+    }
+
+    .buy-it-now {
+        display: flex;
+        width: 80vw;
+        padding: 16px 14px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        border-radius: 45px;
+        color: white;
+        font-size: large;
+        background: var(--WF-Base-800, #158CA4);
+        border-style: none;
+      }
+    
+      .add-to-cart {  
+        width: 80vw; 
+        /* Need to use vw for all buttons when refactoring */
+        padding: 16px 14px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 45px;
+        color: black;
+        font-size: large;
+        border-style: none;
+        border-color: #000;
+        border-style: solid;
+        background-color: white;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+   
+  }
+  

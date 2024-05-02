@@ -17,7 +17,7 @@ const Carousel = ({ images }) => {
   return (
     <div className="carousel">
       
-      <img src={images[currentSlide]} alt={`Slide ${currentSlide + 1}`} />
+      <img id="main-img" src={images[currentSlide]} alt={`Slide ${currentSlide + 1}`} />
       <div className='carousel-buttons'>
       <a onClick={prevSlide}><img src={plate2}/></a>
       <a onClick={nextSlide}><img src={plate}/></a>
