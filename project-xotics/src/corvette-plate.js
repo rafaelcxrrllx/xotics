@@ -1,15 +1,22 @@
 import './corvette-plate.css';
 import plate from './assets/corvette-plate.svg';
+import plate2 from './assets/corvette-plate-2.svg';
 import Nav from './Nav';
 import Footer from './footer';
-
+import Carousel from './Carousel';
 function CorvettePlate() {
+    const images = [
+        plate,
+        plate2,
+        // Add more image URLs as needed
+      ];
+
   return (
+    
     <div >
         <Nav/>
         <div className='corvette-plate-container'>
-            <img id="image" src={plate} alt="A license plate frame"/>
-        
+        <Carousel  id="image" images={images} />        
         <div className='corvette-plate-text'>
             <h2>Grand Sport Forged Carbon Fiber License Plate Frame</h2>
                 <span>$30.00</span>
