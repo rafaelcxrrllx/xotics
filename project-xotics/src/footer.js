@@ -9,9 +9,9 @@ function Footer() {
         <h4>Be the first to know about new collections and exclusive offers.</h4>
       </div>
       <div className='icon-image'>
-        <img src={instagram} alt='Instagram Logo'/>
+        <a href='https://www.instagram.com/xotic_dip/'><img src={instagram} alt='Instagram Logo'/></a>
       </div>
-      <p id="copyright">© 2024 Xotic Dip Powered by Trinity</p>
+      <p id="copyright">© 2024 Xotic Dip Powered by <a href='https://rafaelcxrrllx.github.io/trinitys.world/'>Trinity</a></p>
     </footer>
   );
 }
