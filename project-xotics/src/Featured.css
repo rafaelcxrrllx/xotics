@@ -15,7 +15,15 @@ h1 , p{
     border-style: solid;
     border-width: 1px;
     border-radius: 20px;
-    
+    border-color: #000;
+}
+
+.price {
+    color: #000;
+}
+
+.Link {
+    outline: none;
 }
 
 .button-container {
@@ -31,6 +39,11 @@ h1 , p{
 
 .left-header {
     text-align: left;
+}
+
+h3 {
+    font-size: 30px;
+    color: #000;
 }
 
 .item-header {

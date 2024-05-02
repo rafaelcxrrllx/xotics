@@ -36,7 +36,11 @@ body {
     background: var(--WF-Base-800, #158CA4);
     border-style: none;
     margin-bottom: 30px;
+    outline: none;
+  }
 
+  .Link {
+    text-decoration: none;
   }
   
   #Heading {

@@ -19,9 +19,9 @@ const HamburgerMenu = () => {
         <div className="line"></div>
       </button>
       <ul className={`menu ${isOpen ? 'open' : ''}`}>
-        <Link to="/Shop"><li><a href='./shop'>Shop</a></li></Link>
-        <Link to="/Contact"><li><a href='./shop'>Contact</a></li></Link>
-        <Link to="/About"><li><a href='./shop'>About</a></li></Link>
+        <Link className="Link"  to="/Shop"><li><a href='./shop'>Shop</a></li></Link>
+        <Link className="Link"  to="/Contact"><li><a href='./shop'>Contact</a></li></Link>
+        <Link  className="Link"  to="/About"><li><a href='./shop'>About</a></li></Link>
       </ul>
     </div>
 
