@@ -7,14 +7,30 @@ import React, { useState } from 'react';
 
 function Contact() {
 
-    const [value, setValue] = useState('');
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [phone, setPhone] = useState('');
+    const [message, setMessage] = useState('');
 
-  // Event handler to update the state when input changes
-  const handleChange = (event) => {
-    setValue(event.target.value);
-  };
 
-  return (
+    const handleName = (event) => {
+        setName(event.target.value);
+    };
+
+    const handleEmail = (event) => {
+        setEmail(event.target.value);
+    };
+
+    const handlePhone = (event) => {
+        setPhone(event.target.value);
+    };
+
+    const handleMessage = (event) => {
+        setMessage(event.target.value);
+    };
+
+
+    return (
     <div>
         <Nav/>
     <div className='contact-container'>
@@ -27,16 +43,16 @@ function Contact() {
         <div className='contact'>
             <input
             type="text"
-            value={value}
-            onChange={handleChange}
+            value={name}
+            onChange={handleName}
             placeholder="Name"
             className='text-entry'/>
 
             <input
             type="text"
-            value={value}
-            onChange={handleChange}
-            placeholder="Email"
+            value={email}
+            onChange={handleEmail}
+            placeholder="Email *"
             className='text-entry'
             id="email"/>
         </div>
@@ -44,8 +60,8 @@ function Contact() {
         <div className='phone'>
             <input
             type="text"
-            value={value}
-            onChange={handleChange}
+            value={phone}
+            onChange={handlePhone}
             placeholder="Phone Number"
             className='text-entry'/>
         </div>
@@ -53,8 +69,8 @@ function Contact() {
         <div className='message'>
             <input
             type="text"
-            value={value}
-            onChange={handleChange}
+            value={message}
+            onChange={handleMessage}
             placeholder="Message"
             className='text-entry'/>
         </div>
