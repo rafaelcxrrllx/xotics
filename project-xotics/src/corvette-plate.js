@@ -6,6 +6,7 @@ import Footer from './footer';
 import Carousel from './Carousel';
 import QuantitySelector from './QuantitySelector';
 import ShareButton from './ShareButton';
+
 function CorvettePlate() {
     const images = [
         plate,
