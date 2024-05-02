@@ -9,7 +9,7 @@ body {
     opacity: 100%;
   }
   
-  .container {
+  .home-container {
     display: block;
   }
 
@@ -19,11 +19,13 @@ body {
   }
   
   #header {
+
     font-size: 55px;
     color: white;
   }
   
   .main-button {
+
     display: flex;
     width: 150px;
     padding: 16px 14px;
@@ -32,18 +34,18 @@ body {
     gap: 8px;
     border-radius: 45px;
     color: white;
-    font-size: large;
     background: var(--WF-Base-800, #158CA4);
     border-style: none;
     margin-bottom: 30px;
-    outline: none;
   }
 
   .Link {
+    
     text-decoration: none;
   }
   
   #Heading {
+
     padding-left: 7%;
     padding-right: 7%;
   }
@@ -60,9 +62,7 @@ body {
       margin-top: -35%;
     }
   
-    #header {
-      font-size: 80px;
-    } 
+
   }
   
   

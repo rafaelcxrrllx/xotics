@@ -9,8 +9,6 @@ const HamburgerMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  
-
   return (
     <div className="hamburger-menu">
       <button className={`hamburger ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
@@ -25,9 +23,6 @@ const HamburgerMenu = () => {
       </ul>
     </div>
 
-
-
-    
   );
 }
 

@@ -9,7 +9,6 @@ function Nav() {
    
     return (
 
-
         <nav className="navbar">
        
             <div className="logo">
@@ -24,7 +23,6 @@ function Nav() {
                 <HamburgerMenu/>
             </ul>
         </nav>  
-
     );
 }
 

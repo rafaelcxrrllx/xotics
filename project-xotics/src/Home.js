@@ -9,8 +9,7 @@ import { Link } from 'react-router-dom';
 
 function Home() {
   return (
-    <div className="container">
-      
+    <div className="home-container">
       <Nav/>
       <div className='hero-image'>
         <img src={hero} alt='A white Corvette parked inside of a street tunnel'/>

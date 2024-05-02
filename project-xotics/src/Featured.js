@@ -1,28 +1,17 @@
 import { Link } from 'react-router-dom';
 import './Featured.css';
 import plate from './assets/corvette-plate.svg';
+import Item from './item';
 
 function Featured() {
   return (
-    <div className='Featured-container'>
-        <div className='left-header'>    
+    <div className='featured-container'>
+        <div className='featured-header'>    
             <h2>Featured products</h2>
             <p>Upgrade your whip with our Forged Carbon Fiber 🏎️💨</p>
         </div>
-        <Link className="Link"  to="/corvette-plate">
-        <div className='item-container'>
-            <img src={plate} alt="A license plate frame"/>
-            <div className='item-header'>
-                <h3>Grand Sport Forged Carbon Fiber License Plate Frame</h3>
-                <span className='price'>$30.00</span>
-                <div className='button-container'>
-                    <button className='second-button'> Add to cart</button>
-                </div>
-            </div>
-        </div>
-        </Link>
+        <Item/>
     </div>
-
   );
 }
 

@@ -15,6 +15,8 @@ function Shop() {
         </div>
         <Item/> {/* Corvette Plate Frame */}
         <Item/>
+        <Item/>
+        <Item/>
     </div>
 
     <Footer/>
