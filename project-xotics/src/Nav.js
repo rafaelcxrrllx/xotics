@@ -19,7 +19,7 @@ function Nav() {
                     
                 <Link to="/Shop"><li className='links'><a href='./shop'>Shop</a></li></Link>
                 <Link to="/Contact"><li className='links'><a href='./Contact'>Contact</a></li></Link>
-                <Link to="/About"><li className='links'><a href='./shop'>About</a></li></Link>
+                {/* <Link to="/About"><li className='links'><a href='./shop'>About</a></li></Link> */}
                 <img id="shopping-bag" src={bag} alt="Shopping Bag" />
                 <HamburgerMenu/>
             </ul>

@@ -1,9 +1,10 @@
 
-import './App.css';
+import './Home.css';
 import Nav from './Nav';
 import hero from './assets/hero-image.svg'
 import Featured from './Featured';
 import Footer from './footer';
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
@@ -15,7 +16,7 @@ function Home() {
       </div>
       <div id="Heading">
         <h1 id="header">Elevate Your Ride</h1>
-        <button className='main-button'> Shop all</button>
+        <Link to="/shop"><button id="landing-page-button" className='main-button'> Shop all</button></Link>
       </div>
       <Featured/>
       <Footer/>

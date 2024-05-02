@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Featured.css';
 import plate from './assets/corvette-plate.svg';
 
@@ -8,6 +9,7 @@ function Featured() {
             <h2>Featured products</h2>
             <p>Upgrade your whip with our Forged Carbon Fiber 🏎️💨</p>
         </div>
+        <Link to="/corvette-plate">
         <div className='item-container'>
             <img src={plate} alt="A license plate frame"/>
             <div className='item-header'>
@@ -18,6 +20,7 @@ function Featured() {
                 </div>
             </div>
         </div>
+        </Link>
     </div>
 
   );

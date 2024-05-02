@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './HamburgerMenu.css'; // Import your CSS file for styling
+import { Link } from 'react-router-dom';
 
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,9 +19,9 @@ const HamburgerMenu = () => {
         <div className="line"></div>
       </button>
       <ul className={`menu ${isOpen ? 'open' : ''}`}>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">About</a></li>
+        <Link to="/Shop"><li><a href='./shop'>Shop</a></li></Link>
+        <Link to="/Contact"><li><a href='./shop'>Contact</a></li></Link>
+        <Link to="/About"><li><a href='./shop'>About</a></li></Link>
       </ul>
     </div>
 
