@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/xotics/static/css/main.a41af87e.css",
-    "main.js": "/xotics/static/js/main.b7533d85.js",
-    "static/js/453.1b8f7bdd.chunk.js": "/xotics/static/js/453.1b8f7bdd.chunk.js",
-    "static/media/hero-image.svg": "/xotics/static/media/hero-image.5669c9c409e16bbe122cb137006013f9.svg",
-    "static/media/corvette-plate.svg": "/xotics/static/media/corvette-plate.a90f54a89389cc995c710de9e73bed61.svg",
-    "static/media/corvette-plate-2.svg": "/xotics/static/media/corvette-plate-2.82c939e5952de3d5463b7a7d32195db4.svg",
-    "static/media/logo.svg": "/xotics/static/media/logo.70524e6ceb8fdfc49a86ec4f076d1754.svg",
-    "static/media/background.svg": "/xotics/static/media/background.b74b5aaa49bbe5661143.svg",
-    "static/media/instagram.svg": "/xotics/static/media/instagram.27d1ceca6b70dbfaa68c55339fb5f67c.svg",
-    "static/media/shopping-bag.svg": "/xotics/static/media/shopping-bag.7109db3745764c0743568d63f025b4d6.svg",
-    "index.html": "/xotics/index.html",
-    "main.a41af87e.css.map": "/xotics/static/css/main.a41af87e.css.map",
-    "main.b7533d85.js.map": "/xotics/static/js/main.b7533d85.js.map",
-    "453.1b8f7bdd.chunk.js.map": "/xotics/static/js/453.1b8f7bdd.chunk.js.map"
+    "main.css": "/Home/static/css/main.370aa28f.css",
+    "main.js": "/Home/static/js/main.8d6dbc82.js",
+    "static/js/453.1b8f7bdd.chunk.js": "/Home/static/js/453.1b8f7bdd.chunk.js",
+    "static/media/hero-image.svg": "/Home/static/media/hero-image.5669c9c409e16bbe122cb137006013f9.svg",
+    "static/media/corvette-plate.svg": "/Home/static/media/corvette-plate.a90f54a89389cc995c710de9e73bed61.svg",
+    "static/media/corvette-plate-2.svg": "/Home/static/media/corvette-plate-2.82c939e5952de3d5463b7a7d32195db4.svg",
+    "static/media/logo.svg": "/Home/static/media/logo.70524e6ceb8fdfc49a86ec4f076d1754.svg",
+    "static/media/background.svg": "/Home/static/media/background.b74b5aaa49bbe5661143.svg",
+    "static/media/instagram.svg": "/Home/static/media/instagram.27d1ceca6b70dbfaa68c55339fb5f67c.svg",
+    "static/media/shopping-bag.svg": "/Home/static/media/shopping-bag.7109db3745764c0743568d63f025b4d6.svg",
+    "index.html": "/Home/index.html",
+    "main.370aa28f.css.map": "/Home/static/css/main.370aa28f.css.map",
+    "main.8d6dbc82.js.map": "/Home/static/js/main.8d6dbc82.js.map",
+    "453.1b8f7bdd.chunk.js.map": "/Home/static/js/453.1b8f7bdd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a41af87e.css",
-    "static/js/main.b7533d85.js"
+    "static/css/main.370aa28f.css",
+    "static/js/main.8d6dbc82.js"
   ]
 }
