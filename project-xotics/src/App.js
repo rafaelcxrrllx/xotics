@@ -9,8 +9,8 @@ import CorvettePlate from './corvette-plate';
 function App() {
   return (
 
-    <BrowserRouter>
-      <Routes>
+    <BrowserRouter basename="/xotics" >
+      <Routes >
       <Route path='/' element={<Home/>}/> 
         <Route path='/xotics' element={<Home/>}/> {/* Render Home component at root path */}
         <Route path='/shop' element={<Shop/>}/>
