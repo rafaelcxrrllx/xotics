@@ -10,18 +10,40 @@
     position: absolute;
     margin-top: -30%;
     line-height: 2;
+    text-align: center;
+    margin-bottom: 5%;
+
 }
 
 .hero-image {
     margin-top: -10%;
 }
 
+.logo-img {
+    text-align: center;
+}
+
+img {
+    width: 50%;
+}
+
 @media (max-width: 600px) {
-   
+    .text-container {
+        position: relative;
+        line-height: 2;
+        text-align: left;
+        margin-top: 0%;
+    }
   }
 
   @media (min-width: 601px) and (max-width: 1024px) {
-   
+    .text-container {
+        position: relative;
+        margin-top: 0%;
+        line-height: 2;
+        text-align: left;
+    
+    }
   }
   
   @media (min-width: 1025px) {
@@ -29,6 +51,22 @@
     .hero-image {
         opacity: 50%;
     }
+
+    .text-container {
+        position: relative;
+        margin-top: -20%;
+        line-height: 2;
+        text-align: center;
+    }
+
+    .about-text {
+        text-align: left;
+    }
+
+    img {
+        width: 20%;
+    }
+    
 
 
   }
