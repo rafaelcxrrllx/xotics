@@ -1,7 +1,9 @@
 
 body {
     background-color: #000;
-    display: block;
+    margin: 0;
+    padding: 0;
+
 }
 
 
@@ -36,7 +38,9 @@ span {
     color: black;
 }
 
-
+.header {
+    color: #158CA4;
+  }
 
 .main-button {
 

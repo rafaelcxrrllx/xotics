@@ -6,6 +6,7 @@
     border-width: 1px;
     text-align: center;
     margin-top: 50px;
+    border-color: black;
 }
 
 .item-container img {
@@ -48,6 +49,7 @@
         border-width: 1px;
         border-radius: 20px;
         width: 350px;
+        margin-right: 100px;
     }
   }
   
@@ -57,6 +59,7 @@
         border-width: 1px;
         border-radius: 20px;
         width: 400px;
+        margin-right: 100px;
     }
 
   }
