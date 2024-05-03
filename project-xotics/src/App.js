@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Route, Routes, BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, BrowserRouter, HashRouter } from 'react-router-dom';
 import Shop from './shop';
 import Home from './Home';
 import Contact from './Contact';
@@ -10,7 +10,7 @@ import ScrollToTop from './ScrollToTop';
 function App() {
   return (
 
-    <BrowserRouter basename="/xotics" >
+    <HashRouter >
       <ScrollToTop/>
       <Routes >
       <Route path='/' element={<Home/>}/> 
@@ -21,7 +21,7 @@ function App() {
         <Route path='/About' element={<About/>}/>
         <Route path='/corvette-plate' element={<CorvettePlate/>}/>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
     
   );
 }
