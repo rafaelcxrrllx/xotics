@@ -11,6 +11,7 @@
     justify-content: space-around;
     width: 50px;
     height: 30px;
+    margin-right: 50px;
   }
   
   .line {
@@ -54,6 +55,7 @@
   .menu li a {
     text-decoration: none;
     color: white;
+    margin-right: 50px;
   }
 
 
