@@ -1,6 +1,8 @@
 .about-container {
     display: flex;
     margin-bottom: 5%;
+    justify-content: center; /* Horizontally centers the items */
+    align-items: center; /* Vertically centers the items */
 }
 
 .about-container img {
@@ -8,9 +10,16 @@
 
 }
 
+.about-container-white img {
+    border-radius: 20px;
+
+}
+
 .about-container-white {
     display: flex;
     background-color: white;
+    justify-content: center; /* Horizontally centers the items */
+    align-items: center; /* Vertically centers the items */
 }
 
 .about-img {
@@ -49,8 +58,14 @@
 
 @media (max-width: 600px) {
     .about-container {
-        display: block;
+        display: inline-block;
         margin-bottom: 5%;
+        padding-bottom: 5%;
+    }
+    .about-container-white {
+        display: block;
+        padding-bottom: 3%;
+
     }
 
     .about-img {
@@ -62,25 +77,108 @@
     
     }
 
+    #about-header {
+        color: white;
+        font-size: 60px;
+    }
 
-#about-header {
-    color: white;
-    font-size: 60px;
-}
+    #about-header-white {
+        color: black;
+        font-size: 60px;
+    }
 
-#xotic {
-    color: #158CA4;
-    font-size: 60px;
-}
+    #xotic {
+        color: #158CA4;
+        font-size: 60px;
+    }
   }
 
   @media (min-width: 601px) and (max-width: 1024px) {
+
+    .about-container {
+        display: inline-block;
+        margin-bottom: 5%;
+        padding-bottom: 5%;
+    }
+    .about-container-white {
+        display: block;
+        padding-bottom: 5%;
+
+    }
+
+    .about-img {
+        width: 100%;
+    }
+
+    .about-container img {
+        border-radius: 0px;
+    
+    }
+
+    #about-header {
+        color: white;
+        font-size: 60px;
+    }
+
+    #about-header-white {
+        color: black;
+        font-size: 60px;
+    }
+
+    #xotic {
+        color: #158CA4;
+        font-size: 60px;
+    }
    
   }
   
   @media (min-width: 1025px) {
 
+    .about-container {
+        display: flex;
+        margin-bottom: 3%;
+        padding-bottom: 3%;
+        
+        
+    }
+    .about-container-white {
+        display: flex;
+        padding-bottom: 3%;
 
-    
+    }
+
+    .about-img {
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+
+    #reverse {
+        flex-direction: row-reverse;
+        border-style: none;
+    }
+
+    .about-text {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    #about-header {
+        color: white;
+        font-size: 100px;
+        margin-top: -3%;
+    }
+
+    #about-header-white {
+        color: black;
+        font-size: 100px;
+    }
+
+    #xotic {
+        color: #158CA4;
+        font-size: 100px;
+    }
+
+        
 
   }

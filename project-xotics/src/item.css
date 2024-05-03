@@ -12,7 +12,7 @@
 .item-container  {
     width: 90%;
     border-radius: 20px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .item-container img {
@@ -75,6 +75,8 @@
         margin-right: 50px;
         margin-left: 50px;
         text-align: center;
+        margin-top: 3%;
     }
+
 
   }

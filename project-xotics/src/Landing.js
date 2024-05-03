@@ -37,14 +37,14 @@ function Landing() {
         </h3>
         </div>
       </div>
-      <div className='about-container'>
-        <div className='about-text'>
+      <div className='about-container' id="reverse">
+      <AboutCarousel images={images2}/>
+        <div  className='about-text'>
         <h1 id="about-header"> <span id="xotic">Customize</span> your whip</h1>
         <h3>
             One of a kind customs to your car. 
         </h3>
         </div>
-        <AboutCarousel images={images2}/>
       </div>
       <div className='about-container-white'>
         <img className="about-img" src={tacoma} alt='A picture of the CEO of Xotic Dips sr5'/>
@@ -55,14 +55,15 @@ function Landing() {
         </h3>
         </div>
       </div>
-      <div className='about-container'>
-        <div className='about-text'>
-        <h1 id="about-header">Uniquely <span id="xotic">Xotic</span></h1>
+      <div className='about-container-white' id="reverse">
+      <AboutCarousel images={images}/>
+        <div className='about-text-white'>
+        <h1 id="about-header-white">Uniquely <span id="xotic">Xotic</span></h1>
         <h3>
             No one does it like us. Dip your car pieces today!
         </h3>
         </div>
-        <AboutCarousel images={images}/>
+        
       </div>
     </div>
     
