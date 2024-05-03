@@ -12,8 +12,9 @@ footer {
     padding-bottom: 50px;
 }
 
-footer img {
-    width: 30px;
+.icon-instagram img{
+    width: 50px;
+    color: #158CA4;
 }
 
 footer a {
@@ -23,5 +24,10 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+.logo-img img{
+    width: 200px;
+    margin-top: 20px;
 }
 
