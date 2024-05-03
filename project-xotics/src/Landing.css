@@ -41,12 +41,12 @@
     color: white;
 }
 
-#about-header-white {
+#landing-header-white {
     color: black;
     font-size: 120px;
 }
 
-#about-header {
+#landing-header {
     color: white;
     font-size: 120px;
 }
@@ -77,14 +77,16 @@
     
     }
 
-    #about-header {
+    #landing-header {
         color: white;
         font-size: 60px;
+        line-height: 1.4;
     }
 
-    #about-header-white {
+    #landing-header-white {
         color: black;
         font-size: 60px;
+        line-height: 1.4;
     }
 
     #xotic {
@@ -115,12 +117,12 @@
     
     }
 
-    #about-header {
+    #landing-header {
         color: white;
         font-size: 60px;
     }
 
-    #about-header-white {
+    #landing-header-white {
         color: black;
         font-size: 60px;
     }
@@ -163,13 +165,13 @@
         margin-right: 3%;
     }
 
-    #about-header {
+    #landing-header {
         color: white;
         font-size: 100px;
         margin-top: -3%;
     }
 
-    #about-header-white {
+    #landing-header-white {
         color: black;
         font-size: 100px;
     }
