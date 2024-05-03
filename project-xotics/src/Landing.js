@@ -30,7 +30,7 @@ function Landing() {
       <div className='about-container'>
         <img className="about-img" src={about} alt='CEO of Xotic Dips corvette'/>
         <div className='about-text'>
-        <h1 id="landing-header"><span id="xotic">Dip</span> the World <span id="xotic">Xotic</span> </h1>
+        <h1 id="landing-header"><span id="xotic">Dip</span> your World <span id="xotic">Xotic</span> </h1>
         <h3>
             Personalize your car with the most Xotic customs. 
         </h3>
@@ -41,7 +41,7 @@ function Landing() {
         <div  className='about-text'>
         <h1 id="landing-header"> <span id="xotic">Customize</span> your whip</h1>
         <h3>
-            One of a kind customs to your car. 
+            One of a kind customizations to your car. 
         </h3>
         </div>
       </div>
@@ -50,7 +50,7 @@ function Landing() {
         <div className='about-text-white'>
         <h1 id="landing-header-white"> Keep it <span id="xotic">Classic</span> </h1>
         <h3>
-            Keep your classic cars in mint condition. 
+            Keep your classic in mint condition. 
         </h3>
         </div>
       </div>
