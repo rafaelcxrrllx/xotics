@@ -14,7 +14,7 @@ function Item() {
                 <h3 className='item-name'>Grand Sport Forged Carbon Fiber License Plate Frame</h3>
                 <span>$30.00</span>
                 <div className='button-container'>
-                    <button className='second-button'> Add to cart</button>
+                    <button className='second-button'>Buy now</button>
                 </div>
             </div>
         </div>

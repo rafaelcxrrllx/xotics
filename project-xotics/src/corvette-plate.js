@@ -27,8 +27,7 @@ function CorvettePlate() {
 
                 <div className='buttons'>
                     <QuantitySelector/>
-                    <button className='add-to-cart'> Add to cart</button>
-                    <button className='buy-it-now'> Buy it Now</button>
+                    <button className='add-to-cart'> Buy it Now</button>
                 </div>
             <p id="description">
                 Upgrade your car's aesthetics with our Grand Sport Forged Carbon Fiber License Plate Frame. 
