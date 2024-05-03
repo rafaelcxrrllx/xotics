@@ -1,5 +1,18 @@
+.about-title {
+    color: white;
+    margin-left: 7%;
+    line-height: 1;
+}
+
+.text-container h4 {
+    color: white;
+    margin-left: 7%;
+}
+
 .about-text {
     color: white;
+    margin-left: 7%;
+    margin-right: 7%;
 }
 
 .about-text span {
@@ -21,6 +34,8 @@
 
 .logo-img {
     text-align: center;
+    z-index: 999;
+    padding-top: 5%;
 }
 
 img {
@@ -34,6 +49,17 @@ img {
         text-align: left;
         margin-top: 0%;
     }
+
+    .about-text {
+        line-height: 2;
+        margin-bottom: 10%;
+    }
+
+    .text-container h2 {
+        margin-bottom: 0%;
+    }
+
+
   }
 
   @media (min-width: 601px) and (max-width: 1024px) {
@@ -42,31 +68,37 @@ img {
         margin-top: 0%;
         line-height: 2;
         text-align: left;
+        
     
     }
+
   }
   
   @media (min-width: 1025px) {
 
     .hero-image {
+        z-index: -1;
         opacity: 50%;
     }
 
     .text-container {
         position: relative;
-        margin-top: -20%;
+        margin-top: -30%;
         line-height: 2;
-        text-align: center;
+        text-align: left;
     }
 
-    .about-text {
-        text-align: left;
+    .about-title {
+        color: white;
+        margin-left: 7%;
+        line-height: .2;
     }
 
     img {
         width: 20%;
     }
-    
+
+
 
 
   }
