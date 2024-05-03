@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/xotics/static/css/main.1e099477.css",
-    "main.js": "/xotics/static/js/main.83bdbb31.js",
+    "main.js": "/xotics/static/js/main.8a5e25c4.js",
     "static/js/453.1b8f7bdd.chunk.js": "/xotics/static/js/453.1b8f7bdd.chunk.js",
     "static/media/hero-image.jpg": "/xotics/static/media/hero-image.bd4b4b8f5a018396ce48.jpg",
     "static/media/pan-after.jpg": "/xotics/static/media/pan-after.77cdb25de7c5b6b36287.jpg",
@@ -13,18 +13,16 @@
     "static/media/engine-before.jpg": "/xotics/static/media/engine-before.fc9bd51fc08b16e10a52.jpg",
     "static/media/pan-before.jpg": "/xotics/static/media/pan-before.44f28e85f5ea8cc12f68.jpg",
     "static/media/logo.jpg": "/xotics/static/media/logo.1cc2044067ab4d5adda3.jpg",
-    "static/media/corvette-plate.svg": "/xotics/static/media/corvette-plate.a90f54a89389cc995c710de9e73bed61.svg",
-    "static/media/corvette-plate-2.svg": "/xotics/static/media/corvette-plate-2.82c939e5952de3d5463b7a7d32195db4.svg",
     "static/media/background.jpg": "/xotics/static/media/background.471d2dff141933daae66.jpg",
     "static/media/logo-vector.svg": "/xotics/static/media/logo-vector.8e8df83b11a0235251f312c8ed2d2f00.svg",
     "static/media/instagram.svg": "/xotics/static/media/instagram.27d1ceca6b70dbfaa68c55339fb5f67c.svg",
     "index.html": "/xotics/index.html",
     "main.1e099477.css.map": "/xotics/static/css/main.1e099477.css.map",
-    "main.83bdbb31.js.map": "/xotics/static/js/main.83bdbb31.js.map",
+    "main.8a5e25c4.js.map": "/xotics/static/js/main.8a5e25c4.js.map",
     "453.1b8f7bdd.chunk.js.map": "/xotics/static/js/453.1b8f7bdd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1e099477.css",
-    "static/js/main.83bdbb31.js"
+    "static/js/main.8a5e25c4.js"
   ]
 }
