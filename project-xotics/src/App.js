@@ -10,6 +10,7 @@ function App() {
   return (
     <Router>
         <Routes>
+            <Route path='/' component={<Home/>}/>
             <Route path='/shop' element={<Shop/>}/>
             <Route path='/home' element={<Home/>}/>
             <Route path='/Contact' element={<Contact/>}/>
