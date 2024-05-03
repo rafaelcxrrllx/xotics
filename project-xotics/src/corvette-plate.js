@@ -1,6 +1,6 @@
 import './corvette-plate.css';
-import plate from './assets/corvette-plate.svg';
-import plate2 from './assets/corvette-plate-2.svg';
+import plate from './assets/corvette-frame-1.jpg';
+import plate2 from './assets/corvette-frame-2.jpg';
 import Nav from './Nav';
 import Footer from './footer';
 import Carousel from './Carousel';

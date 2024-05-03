@@ -2,8 +2,6 @@ import './shop.css';
 import './styles.css'
 import Nav from './Nav';
 import Footer from './footer';
-import plate from './assets/corvette-plate.svg'
-// import { Link } from 'react-router-dom';
 import Item from './item';
 
 function Shop() {
