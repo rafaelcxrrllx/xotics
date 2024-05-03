@@ -15,6 +15,9 @@
     position: relative;
   }
 
+  .slogan {
+    color: white;
+  }
   #landing-page-button {
 
     display: flex;

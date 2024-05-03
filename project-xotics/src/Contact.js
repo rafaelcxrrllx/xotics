@@ -35,7 +35,7 @@ function Contact() {
         <Nav/>
     <div className='contact-container'>
 
-        <div className='left-header'>    
+        <div className='header'>    
             <h2>Contact</h2>
             <p>Got an Exotic request? Shoot us a message and we will get back to you soon.</p>
         </div>
