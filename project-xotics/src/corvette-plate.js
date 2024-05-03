@@ -35,7 +35,6 @@ function CorvettePlate() {
                 Crafted from premium-grade forged carbon fiber, this frame combines lightweight construction 
                 with unmatched durability, making it a sleek and long-lasting addition to your whip. 🏎️ 💨
             </p>
-            <ShareButton/>
             </div>
         </div>
         <Footer/>

@@ -68,6 +68,7 @@
 #description {
     margin-top: 30px;
     line-height: 2;
+    margin-right: 10%;
 }
 
 .price {
@@ -75,11 +76,15 @@
 }
 
 @media (max-width: 600px) {
+   
     .corvette-plate-container {
         background-color: white;
+        padding-left: 7%;
+        padding-top: 5%;
+        padding-bottom: 10%;
+        padding-right: 7%;
         display: block;
         overflow-x: hidden;
-        padding-top: 15%;
     }
 
 

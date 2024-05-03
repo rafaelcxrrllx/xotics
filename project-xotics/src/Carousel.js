@@ -19,8 +19,8 @@ const Carousel = ({ images }) => {
       
       <img id="main-img" src={images[currentSlide]} alt={`Slide ${currentSlide + 1}`} />
       <div className='carousel-buttons'>
-      <a onClick={prevSlide}><img src={plate2}/></a>
-      <a onClick={nextSlide}><img src={plate}/></a>
+      <a onClick={prevSlide} className="carousel-thumbnail"><img  src={plate2}/></a>
+      <a onClick={nextSlide} className="carousel-thumbnail"><img src={plate}/></a>
       </div>
     </div>
   );
