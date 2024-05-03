@@ -5,11 +5,13 @@ import Home from './Home';
 import Contact from './Contact';
 import About from './About';
 import CorvettePlate from './corvette-plate';
+import ScrollToTop from './ScrollToTop';
 
 function App() {
   return (
 
     <BrowserRouter basename="/xotics" >
+      <ScrollToTop/>
       <Routes >
       <Route path='/' element={<Home/>}/> 
         <Route path='/xotics' element={<Home/>}/> {/* Render Home component at root path */}

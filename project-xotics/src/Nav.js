@@ -6,12 +6,19 @@ import HamburgerMenu from './HamburgerMenu';
 import { Link } from 'react-router-dom';
 
 function Nav() {
+
+    const handleScrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth' // Optionally add smooth scrolling behavior
+        });
+      };
    
     return (
 
         <nav className="navbar">
        
-            <div className="logo">
+            <div className="logo" onClick={handleScrollToTop}>
             <Link to="/Home"><img src={logo} alt="Logo" /></Link>
             </div>
             <ul className="nav-links">
