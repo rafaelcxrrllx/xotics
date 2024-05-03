@@ -11,14 +11,19 @@ function About() {
   return (
     <div className="home-container">
       <Nav/>
-      <div className='hero-image'>
+        <div className='hero-image'>
         <img src={hero} alt='A white Corvette parked inside of a street tunnel'/>
-      </div>
-      <div id="Heading">
-        <h1 className="slogan">Elevate Your Ride</h1>
-        <Link className="Link" to="/shop"><button  id="landing-page-button"> Shop all</button></Link>
-      </div>
-      <Featured/>
+        </div>
+        <div className='text-container'>
+        <h2 className='about-text'>
+            Xotic Dip <span>est 2020</span>
+        </h2>
+        <h3 className='about-text'>
+            Xotic Dip is a unqiue brand based in South Los Angeles that provides hydro dipping service for car parts and accessories. 
+            Xotic Dip has been the leading brand providing one of a kind pieces for all car lovers. Whether
+            an old or new car, Xotic Dip can level up your car experience with a unique dip!  
+        </h3>
+        </div>
       <Footer/>
     </div>
   );

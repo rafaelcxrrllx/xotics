@@ -12,11 +12,12 @@ function Footer() {
       <div className='icon-instagram'>
         <a href='https://www.instagram.com/xotic_dip/'><img src={instagram} alt='Instagram Logo'/></a>
       </div>
+
       <p id="copyright">
         © 2024 Xotic Dip Powered by <a href='https://rafaelcxrrllx.github.io/trinitys.world/'>Trinity</a>
       </p>
     </footer>
-    
+
   );
 }
 

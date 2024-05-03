@@ -6,14 +6,13 @@ import hero from './assets/hero-image.svg';
 import Featured from './Featured';
 import Footer from './footer';
 import { Link } from 'react-router-dom';
+import Landing from './Landing';
 
 function Home() {
   return (
     <div className="home-container">
       <Nav/>
-      <div className='hero-image'>
-        <img src={hero} alt='A white Corvette parked inside of a street tunnel'/>
-      </div>
+      <Landing/>
       <div id="Heading">
         <h1 className="slogan">Elevate Your Ride</h1>
         <Link className="Link" to="/shop"><button  id="landing-page-button"> Shop all</button></Link>
