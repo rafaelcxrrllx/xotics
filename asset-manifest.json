@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/xotics/static/css/main.a8274313.css",
-    "main.js": "/xotics/static/js/main.76156831.js",
+    "main.css": "/xotics/static/css/main.72bf922f.css",
+    "main.js": "/xotics/static/js/main.a8accbdc.js",
     "static/js/453.1b8f7bdd.chunk.js": "/xotics/static/js/453.1b8f7bdd.chunk.js",
     "static/media/hero-image.svg": "/xotics/static/media/hero-image.5669c9c409e16bbe122cb137006013f9.svg",
     "static/media/engine-after.svg": "/xotics/static/media/engine-after.3201493e49b3a683fa8272ddee047f9a.svg",
@@ -14,15 +14,16 @@
     "static/media/corvette-plate-2.svg": "/xotics/static/media/corvette-plate-2.82c939e5952de3d5463b7a7d32195db4.svg",
     "static/media/logo.svg": "/xotics/static/media/logo.70524e6ceb8fdfc49a86ec4f076d1754.svg",
     "static/media/background.svg": "/xotics/static/media/background.b74b5aaa49bbe5661143.svg",
+    "static/media/logo-vector.svg": "/xotics/static/media/logo-vector.8e8df83b11a0235251f312c8ed2d2f00.svg",
     "static/media/instagram.svg": "/xotics/static/media/instagram.27d1ceca6b70dbfaa68c55339fb5f67c.svg",
     "static/media/shopping-bag.svg": "/xotics/static/media/shopping-bag.7109db3745764c0743568d63f025b4d6.svg",
     "index.html": "/xotics/index.html",
-    "main.a8274313.css.map": "/xotics/static/css/main.a8274313.css.map",
-    "main.76156831.js.map": "/xotics/static/js/main.76156831.js.map",
+    "main.72bf922f.css.map": "/xotics/static/css/main.72bf922f.css.map",
+    "main.a8accbdc.js.map": "/xotics/static/js/main.a8accbdc.js.map",
     "453.1b8f7bdd.chunk.js.map": "/xotics/static/js/453.1b8f7bdd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a8274313.css",
-    "static/js/main.76156831.js"
+    "static/css/main.72bf922f.css",
+    "static/js/main.a8accbdc.js"
   ]
 }
