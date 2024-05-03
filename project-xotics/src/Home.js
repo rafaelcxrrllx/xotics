@@ -1,8 +1,8 @@
 
 import './Home.css';
-import './styles.css'
+import './styles.css';
 import Nav from './Nav';
-import hero from './assets/hero-image.svg'
+import hero from './assets/hero-image.svg';
 import Featured from './Featured';
 import Footer from './footer';
 import { Link } from 'react-router-dom';
@@ -16,7 +16,7 @@ function Home() {
       </div>
       <div id="Heading">
         <h1 id="header">Elevate Your Ride</h1>
-        <Link className="Link" to="/shop"><button id="landing-page-button" className='main-button'> Shop all</button></Link>
+        <Link className="Link" to="/shop"><button  id="landing-page-button"> Shop all</button></Link>
       </div>
       <Featured/>
       <Footer/>

@@ -8,7 +8,7 @@ function Featured() {
     <div className='featured-container'>
         <div className='featured-header'>    
             <h2>Featured products</h2>
-            <p>Upgrade your whip with our Forged Carbon Fiber 🏎️💨</p>
+            <h4>Upgrade your whip with our Forged Carbon Fiber 🏎️💨</h4>
         </div>
         <Item/>
     </div>
