@@ -26,11 +26,13 @@ body {
     display: flex;
     gap: 33px; /* Adjust the space between links */
     text-decoration: none;
+    margin-right: 5%;
   }
   
   .nav-links li a {
     color: #fff; /* Change link color */
     text-decoration: none;
+    margin-right: 5%;
   }
   
   .nav-links li a:hover {
