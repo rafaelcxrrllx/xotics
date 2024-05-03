@@ -1,13 +1,12 @@
 
 import './Landing.css';
 import './styles.css';
-import { Link } from 'react-router-dom';
 import about from './assets/about-img.jpg'
-import panbefore from './assets/pan-before.svg';
-import panafter from './assets/pan-after.svg';
-import enginebefore from './assets/engine-before.svg';
-import engineafter from './assets/engine-after.svg';
-import tacoma from './assets/tacoma.svg';
+import panbefore from './assets/pan-before.jpg';
+import panafter from './assets/pan-after.jpg';
+import enginebefore from './assets/engine-before.jpg';
+import engineafter from './assets/engine-after.jpg';
+import tacoma from './assets/tacoma.jpg';
 import AboutCarousel from './AboutCarousel';
 
 
@@ -29,7 +28,7 @@ function Landing() {
   return (
     <div>
       <div className='about-container'>
-        <img className="about-img" src={about} alt='A picture of the CEO of Xotic Dips corvette'/>
+        <img className="about-img" src={about} alt='CEO of Xotic Dips corvette'/>
         <div className='about-text'>
         <h1 id="landing-header"><span id="xotic">Dip</span> the World <span id="xotic">Xotic</span> </h1>
         <h3>
@@ -47,7 +46,7 @@ function Landing() {
         </div>
       </div>
       <div className='about-container-white'>
-        <img className="about-img" src={tacoma} alt='A picture of the CEO of Xotic Dips sr5'/>
+        <img className="about-img" src={tacoma} alt='CEO of Xotic Dips SR5'/>
         <div className='about-text-white'>
         <h1 id="landing-header-white"> Keep it <span id="xotic">Classic</span> </h1>
         <h3>

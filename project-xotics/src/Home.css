@@ -46,7 +46,7 @@
   
   #Heading {
    
-    background-image: url('./assets/background.svg');
+    background-image: url('./assets/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 7%;
@@ -58,7 +58,6 @@
   @media (max-width: 600px) {
     #Heading {
 
-      background-image: url('./assets/background.svg');
       background-repeat: no-repeat;
       background-size: cover;
       padding-bottom: 7%;
@@ -88,7 +87,6 @@
 
     #Heading {
 
-      background-image: url('./assets/background.svg');
       background-repeat: no-repeat;
       background-size: cover;
       padding-bottom: 5%;

@@ -1,7 +1,6 @@
 import React from 'react';
 import './Nav.css';
-import logo from './assets/logo.svg';
-import bag from './assets/shopping-bag.svg';
+import logo from './assets/logo.jpg';
 import HamburgerMenu from './HamburgerMenu';
 import { Link } from 'react-router-dom';
 

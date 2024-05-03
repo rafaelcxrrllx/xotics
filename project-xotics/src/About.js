@@ -2,11 +2,9 @@
 import './About.css';
 import './styles.css';
 import Nav from './Nav';
-import hero from './assets/hero-image.svg';
+import hero from './assets/hero-image.jpg';
 import logo from './assets/logo-vector.svg';
-import Featured from './Featured';
 import Footer from './footer';
-import { Link } from 'react-router-dom';
 
 function About() {
   return (
