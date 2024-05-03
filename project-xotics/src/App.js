@@ -11,7 +11,8 @@ function App() {
 
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Home/>}/> {/* Render Home component at root path */}
+      <Route path='/' element={<Home/>}/> 
+        <Route path='/xotics' element={<Home/>}/> {/* Render Home component at root path */}
         <Route path='/shop' element={<Shop/>}/>
         <Route path='/home' element={<Home/>}/>
         <Route path='/Contact' element={<Contact/>}/>
