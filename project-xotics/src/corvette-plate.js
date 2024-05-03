@@ -4,8 +4,8 @@ import plate2 from './assets/corvette-plate-2.svg';
 import Nav from './Nav';
 import Footer from './footer';
 import Carousel from './Carousel';
-import QuantitySelector from './QuantitySelector';
 import ShareButton from './ShareButton';
+import './styles.css'
 
 function CorvettePlate() {
     const images = [
@@ -26,8 +26,7 @@ function CorvettePlate() {
                 <span className='price'>$30.00</span>
 
                 <div className='buttons'>
-                    <QuantitySelector/>
-                    <button className='add-to-cart'> Buy it Now</button>
+                    <a id="view" href='https://buy.stripe.com/6oE3eY29t5Offok9AA' ><button className='add-to-cart'> Buy it Now</button></a>
                 </div>
             <p id="description">
                 Upgrade your car's aesthetics with our Grand Sport Forged Carbon Fiber License Plate Frame. 

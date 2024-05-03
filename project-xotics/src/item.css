@@ -21,6 +21,11 @@
     border-radius: 20px;
 }
 
+#view {
+    outline: none;
+    text-decoration: none;
+}
+
 .button-container {
     
     display: flex;
