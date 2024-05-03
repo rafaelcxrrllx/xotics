@@ -25,9 +25,7 @@ function About() {
         </p>
         
         </div>
-        <div className='logo-img'>
-        <img src={logo} alt="logo of Xotic Dip"/>
-        </div>
+       
       <Footer/>
     </div>
   );

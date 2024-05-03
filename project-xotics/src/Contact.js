@@ -2,6 +2,7 @@ import './Contact.css';
 import Nav from './Nav';
 import Footer from './footer';
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 
 
 
@@ -29,10 +30,26 @@ function Contact() {
         setMessage(event.target.value);
     };
 
+    const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_a2xxafl', 'template_n3ligrq', e.target, 'UMekQJvGsQzWSis2P')
+      .then((result) => {
+        console.log('Email sent successfully:', result.text);
+      }, (error) => {
+        console.error('Failed to send email:', error.text);
+      });
+  };
+
+
+
 
     return (
+
+
     <div>
         <Nav/>
+
     <div className='contact-container'>
 
         <div className='header'>    
@@ -40,12 +57,15 @@ function Contact() {
             <p>Got an Exotic request? Shoot us a message and we will get back to you soon.</p>
         </div>
 
+        <form onSubmit={handleSubmit}  >
+
         <div className='contact'>
             <input
             type="text"
             value={name}
             onChange={handleName}
             placeholder="Name"
+            name="from_name"
             className='text-entry'/>
 
             <input
@@ -54,15 +74,19 @@ function Contact() {
             onChange={handleEmail}
             placeholder="Email *"
             className='text-entry'
+            name="from_email"
             id="email"/>
+            
         </div>
 
         <div className='phone'>
             <input
-            type="text"
+            
+            type="tel"
             value={phone}
             onChange={handlePhone}
             placeholder="Phone Number"
+            name="from_phone"
             className='text-entry'/>
         </div>
 
@@ -72,10 +96,14 @@ function Contact() {
             value={message}
             onChange={handleMessage}
             placeholder="Message"
+            name="message"
             className='text-entry'/>
         </div>
+        <button type="submit" className='main-button'> Send</button>
+        </form>
 
-        <button className='main-button'> Send</button>
+
+        
     </div>
 
     <Footer/>
