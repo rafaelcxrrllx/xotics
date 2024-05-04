@@ -5,24 +5,43 @@ import Nav from './Nav';
 import hero from './assets/hero-image.jpg';
 import logo from './assets/logo-vector.svg';
 import Footer from './footer';
+import { motion } from 'framer-motion';
 
 function About() {
   return (
     <div className="home-container">
       <Nav/>
         <div className='hero-image'>
-        <img src={hero} alt='A white Corvette parked inside of a street tunnel'/>
+        <motion.img 
+          initial={{ y: '3vw', opacity: 0 }} // Initial opacity set to 0
+          animate={{ y: 0, opacity: 1 }} // Animate opacity to 1
+          transition={{ duration: 1 }} // Animation duration
+          src={hero} alt='A white Corvette parked inside of a street tunnel'/>
         </div>
         <div className='text-container'>
-            <h2 className='about-title' id="xotic">
+            <motion.h2 
+            initial={{ x: '3vw', opacity: 0 }} // Initial opacity set to 0
+            animate={{ x: 0, opacity: 1 }} // Animate opacity to 1
+            transition={{ duration: 1 }} // Animation duration
+              className='about-title' id="xotic">
                 Xotic Dip
-            </h2>
-            <h4>est 2020</h4>
-        <p className='about-text'>
+            </motion.h2>
+            <motion.h4 
+            initial={{ y: '3vw', opacity: 0 }} // Initial opacity set to 0
+            animate={{ y: 0, opacity: 1 }} // Animate opacity to 1
+            transition={{ duration: 1 }} // Animation duration
+            >
+                est 2020
+            </motion.h4>
+        <motion.h4 
+          initial={{ y: '3vw', opacity: 0 }} // Initial opacity set to 0
+          animate={{ y: 0, opacity: 1 }} // Animate opacity to 1
+          transition={{ duration: 1 }} // Animation duration
+          className='about-text'>
             Xotic Dip is a unqiue brand based in South Los Angeles that provides hydro dipping service for car parts and accessories. 
             Xotic Dip has been the leading brand providing one of a kind pieces for all car lovers. Whether
             an old or new car, Xotic Dip can level up your car experience with a unique dip!  
-        </p>
+        </motion.h4>
         
         </div>
        
