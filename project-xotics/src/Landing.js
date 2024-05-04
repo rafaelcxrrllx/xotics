@@ -11,6 +11,7 @@ import AboutCarousel from './AboutCarousel';
 import React, { useRef } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { Link } from 'react-router-dom';
 
 function Landing() {
 
@@ -40,14 +41,14 @@ function Landing() {
       <div  ref={scrollRef} className='about-container'>
 
         <motion.img 
-          initial={{ x: '-10vw', opacity: 0 }} // Initial opacity set to 0
+          initial={{ x: '-5vw', opacity: 0 }} // Initial opacity set to 0
           animate={{ x: 0, opacity: 1 }} // Animate opacity to 1
           transition={{ duration: 1 }} // Animation duration
           className="about-img" src={about} alt='CEO of Xotic Dips corvette'/>
           
         <div ref={scrollRef}  className='about-text'>
           <motion.h1 
-            initial={{ x: '10vw', opacity: 0 }} // Initial opacity set to 0
+            initial={{ x: '5vw', opacity: 0 }} // Initial opacity set to 0
             animate={{ x: 0, opacity: 1 }} // Animate opacity to 1
             transition={{ duration: 1 }} // Animation duration
             ref={ref}
@@ -55,11 +56,14 @@ function Landing() {
           </motion.h1>
 
           <motion.h3
-            initial={{ y: '10vw', opacity: 0 }} // Initial opacity set to 0
+            initial={{ y: '5vw', opacity: 0 }} // Initial opacity set to 0
             animate={{ y: 0, opacity: 1 }} // Animate opacity to 1
             transition={{ duration: 1 }}>
               Personalize your car with the most Xotic customs. 
           </motion.h3>
+          <br/>
+          <Link  className="Link" to="/shop"><button  className="main-button"> Shop all</button></Link>
+
         </div>
     </div>
 
@@ -67,16 +71,16 @@ function Landing() {
       
       <AboutCarousel images={images2}/>
       
-      <div  ref={scrollRef} className='about-text'>
+      <div className='about-text'>
 
         <motion.h1 
-          initial={{ x: '10vw', opacity: 0 }} // Initial opacity set to 0
+          initial={{ x: '5vw', opacity: 0 }} // Initial opacity set to 0
           animate={{ x: 0, opacity: 1 }} // Animate opacity to 1
           transition={{ duration: 1 }} // Animation duration
           ref={ref}
           id="landing-header"><span id="xotic">Customize</span> Your <span id="xotic">Ride</span> </motion.h1>
         <motion.h3
-          initial={{ y: '10vw', opacity: 0 }} // Initial opacity set to 0
+          initial={{ y: '5vw', opacity: 0 }} // Initial opacity set to 0
           animate={{ y: 0, opacity: 1 }} // Animate opacity to 1
           transition={{ duration: 1 }}>
             We create one of a kind pieces. 
@@ -89,13 +93,13 @@ function Landing() {
         <motion.img
            ref={ref}
            initial={{ x: '-5vw', opacity: 0 }}
-           animate={{ x: inView ? 0 : '-10vw' , opacity: inView ? 1 : 0 }} // Animate opacity based on inView status
+           animate={{ x: inView ? 0 : '-5vw' , opacity: inView ? 1 : 0 }} // Animate opacity based on inView status
            transition={{ duration: 1 }} // Animation duration
         className="about-img" src={tacoma} alt='CEO of Xotic Dips SR5'/>
         <motion.div 
           ref={ref}
-          initial={{ y: '10vw', opacity: 0 }}
-          animate={{ y: inView ? 0 : '10vw' , opacity: inView ? 1 : 0 }} // Animate opacity based on inView status
+          initial={{ y: '5vw', opacity: 0 }}
+          animate={{ y: inView ? 0 : '5vw' , opacity: inView ? 1 : 0 }} // Animate opacity based on inView status
           transition={{ duration: 1 }}
           className='about-text-white'>
         <h1 id="landing-header-white"> Keep It <span id="xotic">Classic</span> </h1>

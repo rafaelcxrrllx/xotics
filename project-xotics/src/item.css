@@ -7,7 +7,12 @@
     text-align: center;
     margin-top: 50px;
     border-color: black;
+    transition: transform 0.3s ease-in-out;
 }
+
+.item-container:hover {
+    transform: scale(1.05); /* Scale up by 10% */
+  }
 
 .item-container  {
     width: 90%;

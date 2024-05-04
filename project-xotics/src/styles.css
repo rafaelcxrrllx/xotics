@@ -56,6 +56,8 @@ span {
     border-style: none;
     margin-bottom: 30px;
     font-size: 20px;
+    transition: transform 0.3s ease-in-out;
+
   }
 
 
@@ -76,6 +78,16 @@ span {
     margin-bottom: 7%;
     margin-top: 30px;
     font-size: 20px;
+    transition: transform 0.3s ease-in-out;
+
+  }
+
+  .second-button:hover {
+    transform: scale(1.05); /* Scale up by 10% */
+  }
+
+  .main-button:hover {
+    transform: scale(1.05); /* Scale up by 10% */
   }
 
 
