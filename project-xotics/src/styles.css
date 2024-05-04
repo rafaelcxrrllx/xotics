@@ -52,7 +52,6 @@ h2 {
     font-family:  'Racing Sans One';
     font-style: normal;
     line-height: 100%; /* 139.572% */
-    letter-spacing: 7%;
 }
 
 h3 {
@@ -60,7 +59,6 @@ h3 {
     font-family: 'Racing Sans One';
     font-style: normal;
     line-height: 200%;
-    letter-spacing: 7%;
 }
 
 p {
@@ -68,7 +66,6 @@ p {
     font-family: 'Racing Sans One';
     font-style: normal;
     line-height: 100%;
-    letter-spacing: 7%;
 }
 
 a {
@@ -77,7 +74,6 @@ a {
     font-style: normal;
     font-weight: 500;
     line-height: 100%; /* 139.572% */
-    letter-spacing: 7%;
     cursor: pointer;
 }
 
@@ -87,7 +83,6 @@ button {
      font-style: normal;
      font-weight: 500;
      line-height: 100%; /* 139.572% */
-     letter-spacing: 7%;
      cursor: pointer;
 }
 
