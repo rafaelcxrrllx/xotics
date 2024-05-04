@@ -8,9 +8,17 @@ import enginebefore from './assets/engine-before.jpg';
 import engineafter from './assets/engine-after.jpg';
 import tacoma from './assets/tacoma.jpg';
 import AboutCarousel from './AboutCarousel';
-
+import React, { useRef } from 'react';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 function Landing() {
+
+
+  const { ref, inView } = useInView({
+    threshold: 0.5, // Set the threshold to 0.5 for when to trigger the animation
+    triggerOnce: false, // Ensure the animation only triggers once
+  });
 
     const images = [
         panbefore,
@@ -24,37 +32,79 @@ function Landing() {
         // Add more image URLs here
       ];
 
+      const scrollRef = useRef(null)
+
 
   return (
-    <div>
-      <div className='about-container'>
-        <img className="about-img" src={about} alt='CEO of Xotic Dips corvette'/>
-        <div className='about-text'>
-        <h1 id="landing-header"><span id="xotic">Dip</span> your World <span id="xotic">Xotic</span> </h1>
-        <h3>
-            Personalize your car with the most Xotic customs. 
-        </h3>
+    <div >
+      <div  ref={scrollRef} className='about-container'>
+
+        <motion.img 
+          initial={{ x: '-10vw', opacity: 0 }} // Initial opacity set to 0
+          animate={{ x: 0, opacity: 1 }} // Animate opacity to 1
+          transition={{ duration: 1 }} // Animation duration
+          className="about-img" src={about} alt='CEO of Xotic Dips corvette'/>
+          
+        <div ref={scrollRef}  className='about-text'>
+          <motion.h1 
+            initial={{ x: '10vw', opacity: 0 }} // Initial opacity set to 0
+            animate={{ x: 0, opacity: 1 }} // Animate opacity to 1
+            transition={{ duration: 1 }} // Animation duration
+            ref={ref}
+            id="landing-header">Dip Your <span id="xotic">World</span> 
+          </motion.h1>
+
+          <motion.h3
+            initial={{ y: '10vw', opacity: 0 }} // Initial opacity set to 0
+            animate={{ y: 0, opacity: 1 }} // Animate opacity to 1
+            transition={{ duration: 1 }}>
+              Personalize your car with the most Xotic customs. 
+          </motion.h3>
         </div>
-      </div>
-      <div className='about-container' id="reverse">
+    </div>
+
+    <div ref={scrollRef}  className='about-container' id="reverse">
+      
       <AboutCarousel images={images2}/>
-        <div  className='about-text'>
-        <h1 id="landing-header"> <span id="xotic">Customize</span> your whip</h1>
-        <h3>
-            One of a kind customizations to your car. 
-        </h3>
-        </div>
+      
+      <div  ref={scrollRef} className='about-text'>
+
+        <motion.h1 
+          initial={{ x: '10vw', opacity: 0 }} // Initial opacity set to 0
+          animate={{ x: 0, opacity: 1 }} // Animate opacity to 1
+          transition={{ duration: 1 }} // Animation duration
+          ref={ref}
+          id="landing-header"><span id="xotic">Customize</span> Your <span id="xotic">Ride</span> </motion.h1>
+        <motion.h3
+          initial={{ y: '10vw', opacity: 0 }} // Initial opacity set to 0
+          animate={{ y: 0, opacity: 1 }} // Animate opacity to 1
+          transition={{ duration: 1 }}>
+            We create one of a kind pieces. 
+        </motion.h3>
       </div>
-      <div className='about-container-white'>
-        <img className="about-img" src={tacoma} alt='CEO of Xotic Dips SR5'/>
-        <div className='about-text-white'>
-        <h1 id="landing-header-white"> Keep it <span id="xotic">Classic</span> </h1>
+
+    </div>
+
+    <div ref={scrollRef}   className='about-container-white'>
+        <motion.img
+           ref={ref}
+           initial={{ x: '10vw', opacity: 0 }}
+           animate={{ x: inView ? 0 : '-10vw' , opacity: inView ? 1 : 0 }} // Animate opacity based on inView status
+           transition={{ duration: 1 }} // Animation duration
+        className="about-img" src={tacoma} alt='CEO of Xotic Dips SR5'/>
+        <motion.div 
+          ref={ref}
+          initial={{ y: '10vw', opacity: 0 }}
+          animate={{ y: inView ? 0 : '10vw' , opacity: inView ? 1 : 0 }} // Animate opacity based on inView status
+          transition={{ duration: 1 }}
+          className='about-text-white'>
+        <h1 id="landing-header-white"> Keep It <span id="xotic">Classic</span> </h1>
         <h3>
             Keep your classic in mint condition. 
         </h3>
-        </div>
+        </motion.div>
       </div>
-      <div className='about-container-white' id="reverse">
+      <div ref={scrollRef} className='about-container-white' id="reverse">
       <AboutCarousel images={images}/>
         <div className='about-text-white'>
         <h1 id="landing-header-white">Uniquely <span id="xotic">Xotic</span></h1>
@@ -62,7 +112,6 @@ function Landing() {
             No one does it like us. Dip your car pieces today!
         </h3>
         </div>
-        
       </div>
     </div>
     

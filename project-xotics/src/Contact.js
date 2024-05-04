@@ -72,7 +72,7 @@ function Contact() {
             type="text"
             value={email}
             onChange={handleEmail}
-            placeholder="Email *"
+            placeholder="Email"
             className='text-entry'
             name="from_email"
             id="email"/>
