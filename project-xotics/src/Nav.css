@@ -27,6 +27,7 @@ body {
     gap: 33px; /* Adjust the space between links */
     text-decoration: none;
     margin-right: 5%;
+    font-size: large;
   }
   
   .nav-links li a {

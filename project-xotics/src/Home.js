@@ -8,7 +8,6 @@ import { Link } from 'react-router-dom';
 import Landing from './Landing';
 import { motion } from 'framer-motion';
 import React, { useRef } from 'react';
-import { useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 
