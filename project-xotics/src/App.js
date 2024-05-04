@@ -6,8 +6,18 @@ import Contact from './Contact';
 import About from './About';
 import CorvettePlate from './corvette-plate';
 import ScrollToTop from './ScrollToTop';
+import { useEffect } from 'react';
+import logo from './assets/logo.jpg';
 
 function App() {
+
+  useEffect(() => {
+    const favicon = document.querySelector('link[rel="icon"]');
+    // Change the favicon URL
+    favicon.href = {logo};
+}, []);
+
+
   return (
 
     <HashRouter >
