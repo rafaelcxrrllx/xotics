@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import React, { useRef } from 'react';
 import { useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import './styles.css';
 
 function Featured() {
 

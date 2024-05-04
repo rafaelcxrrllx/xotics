@@ -58,7 +58,8 @@ function Landing() {
           <motion.h3
             initial={{ y: '5vw', opacity: 0 }} // Initial opacity set to 0
             animate={{ y: 0, opacity: 1 }} // Animate opacity to 1
-            transition={{ duration: 1 }}>
+            transition={{ duration: 1 }}
+            id="personalize">
               Personalize your car with the most Xotic customs. 
           </motion.h3>
           <br/>
@@ -78,7 +79,7 @@ function Landing() {
           animate={{ x: 0, opacity: 1 }} // Animate opacity to 1
           transition={{ duration: 1 }} // Animation duration
           ref={ref}
-          id="landing-header"><span id="xotic">Customize</span> Your <span id="xotic">Ride</span> </motion.h1>
+          id="landing-header"><span id="xotic">Pimp</span> Your <span id="xotic">Ride</span> </motion.h1>
         <motion.h3
           initial={{ y: '5vw', opacity: 0 }} // Initial opacity set to 0
           animate={{ y: 0, opacity: 1 }} // Animate opacity to 1

@@ -1,5 +1,7 @@
 import React from 'react';
 import './Nav.css';
+import './styles.css';
+
 import logo from './assets/logo.jpg';
 import HamburgerMenu from './HamburgerMenu';
 import { Link } from 'react-router-dom';
