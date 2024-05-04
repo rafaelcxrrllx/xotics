@@ -7,7 +7,7 @@ import Footer from './footer';
 import { Link } from 'react-router-dom';
 import Landing from './Landing';
 import { motion } from 'framer-motion';
-import React, { useRef } from 'react';
+import React from 'react';
 import { useInView } from 'react-intersection-observer';
 
 
@@ -18,7 +18,6 @@ function Home() {
     triggerOnce: false, // Ensure the animation only triggers once
   });
 
-  const scrollRef = useRef(null)
 
 
   return (
