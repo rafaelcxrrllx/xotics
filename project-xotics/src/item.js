@@ -24,10 +24,10 @@ function Item() {
             className='item-container'>
             <img src={plate} alt="A license plate frame"/>
             <div className='item-header'>
-                <h3 className='item-name'>Grand Sport Forged Carbon Fiber License Plate Frame</h3>
+                <h3 className='item-name'>Grand Sport Forged Carbon Fiber Frame</h3>
                 <span>$30.00</span>
                 <div className='button-container'>
-                    <button className='second-button'>View</button>
+                    <button id="shop-button" className='second-button'>View</button>
                 </div>
             </div>
         </motion.div>
