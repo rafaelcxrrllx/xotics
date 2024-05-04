@@ -113,7 +113,7 @@ function Landing() {
         <div className='about-text-white'>
         <h1 id="landing-header-white">Uniquely <span id="xotic">Xotic</span></h1>
         <h3>
-            No one does it like us. Dip your car pieces today!
+            No one does it like us. Level up today!
         </h3>
         </div>
       </div>
