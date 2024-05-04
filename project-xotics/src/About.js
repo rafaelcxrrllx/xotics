@@ -3,7 +3,6 @@ import './About.css';
 import './styles.css';
 import Nav from './Nav';
 import hero from './assets/hero-image.jpg';
-import logo from './assets/logo-vector.svg';
 import Footer from './footer';
 import { motion } from 'framer-motion';
 

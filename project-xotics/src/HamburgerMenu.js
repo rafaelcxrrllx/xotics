@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './HamburgerMenu.css'; // Import your CSS file for styling
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+
 
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);

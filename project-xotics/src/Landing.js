@@ -9,7 +9,7 @@ import engineafter from './assets/engine-after.jpg';
 import tacoma from './assets/tacoma.jpg';
 import AboutCarousel from './AboutCarousel';
 import React, { useRef } from 'react';
-import { motion, useAnimation } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom';
 
