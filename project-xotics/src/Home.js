@@ -6,16 +6,35 @@ import Featured from './Featured';
 import Footer from './footer';
 import { Link } from 'react-router-dom';
 import Landing from './Landing';
+import { motion } from 'framer-motion';
+import React, { useRef } from 'react';
+import { useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+
 
 function Home() {
+
+  const { ref, inView } = useInView({
+    threshold: 0.5, // Set the threshold to 0.5 for when to trigger the animation
+    triggerOnce: false, // Ensure the animation only triggers once
+  });
+
+  const scrollRef = useRef(null)
+
+
   return (
     <div className="home-container">
       <Nav/>
       <Landing/>
-      <div id="Heading">
+      <motion.div 
+        ref={ref}
+        initial={{  opacity: 0 }}
+        animate={{ opacity: inView ? 1 : 0 }} // Animate opacity based on inView status
+        transition={{ duration: 1 }} // Animation duration
+        id="Heading">
         <h1 className="slogan">Elevate Your Ride</h1>
-        <Link className="Link" to="/shop"><button  id="landing-page-button"> Shop all</button></Link>
-      </div>
+        <Link id='landing-page-link' className="Link" to="/shop"><button  id="landing-page-button"> Shop all</button></Link>
+      </motion.div>
       <Featured/>
       <Footer/>
     </div>

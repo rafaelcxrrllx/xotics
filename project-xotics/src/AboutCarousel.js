@@ -31,8 +31,8 @@ const AboutCarousel = ({ images }) => {
     <div ref={scrollRef}>
     <motion.div 
     ref={ref}
-    initial={{ y: '10vw', opacity: 0 }}
-    animate={{ y: inView ? 0 : '10vw' , opacity: inView ? 1 : 0 }} // Animate opacity based on inView status
+    initial={{ y: '5vw', opacity: 0 }}
+    animate={{ y: inView ? 0 : '5vw' , opacity: inView ? 1 : 0 }} // Animate opacity based on inView status
     transition={{ duration: 1 }} 
     className="carousel">
       <img src={images[currentIndex]} alt={`Slide ${currentIndex}`} />

@@ -82,11 +82,17 @@ span {
 
 a {
     outline: none;
+    cursor: pointer;
 }
 
 .Link {
     text-decoration: none;
+
   }
+
+Link {
+    display: flex;
+}
 
 
   @media (max-width: 600px) {

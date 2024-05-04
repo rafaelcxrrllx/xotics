@@ -88,7 +88,7 @@ function Landing() {
     <div ref={scrollRef}   className='about-container-white'>
         <motion.img
            ref={ref}
-           initial={{ x: '10vw', opacity: 0 }}
+           initial={{ x: '-5vw', opacity: 0 }}
            animate={{ x: inView ? 0 : '-10vw' , opacity: inView ? 1 : 0 }} // Animate opacity based on inView status
            transition={{ duration: 1 }} // Animation duration
         className="about-img" src={tacoma} alt='CEO of Xotic Dips SR5'/>
