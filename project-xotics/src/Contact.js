@@ -3,6 +3,7 @@ import Nav from './Nav';
 import Footer from './footer';
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
+import { motion } from 'framer-motion';
 
 
 
@@ -50,14 +51,26 @@ function Contact() {
     <div>
         <Nav/>
 
-    <div className='contact-container'>
+    <div 
+
+        className='contact-container'>
 
         <div className='header'>    
-            <h2>Contact</h2>
-            <p>Got an Exotic request? Shoot us a message and we will get back to you soon.</p>
+            <motion.h2
+             initial={{ x: '-3vw', opacity: 0 }} // Initial opacity set to 0
+             animate={{ x: 0, opacity: 1 }} // Animate opacity to 1
+             transition={{ duration: 1 }} // Animation duration
+                >Contact</motion.h2>
+            <motion.p
+                 initial={{ y: '1vw', opacity: 0 }} // Initial opacity set to 0
+                 animate={{ y: 0, opacity: 1 }} // Animate opacity to 1
+                 transition={{ duration: 1 }}>Got an Exotic request? Shoot us a message and we will get back to you soon.</motion.p>
         </div>
 
-        <form onSubmit={handleSubmit}  >
+        <motion.form onSubmit={handleSubmit}  
+            initial={{ y: '1vw', opacity: 0 }} // Initial opacity set to 0
+            animate={{ y: 0, opacity: 1 }} // Animate opacity to 1
+            transition={{ duration: 1 }}> 
 
         <div className='contact'>
             <input
@@ -100,7 +113,7 @@ function Contact() {
             className='text-entry'/>
         </div>
         <button type="submit" className='main-button'> Send</button>
-        </form>
+        </motion.form>
 
 
         

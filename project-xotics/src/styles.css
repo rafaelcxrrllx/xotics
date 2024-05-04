@@ -92,6 +92,7 @@ span {
     padding: 16px 14px;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     gap: 8px;
     border-radius: 45px;
     color: white;
