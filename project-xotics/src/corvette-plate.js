@@ -42,7 +42,7 @@ function CorvettePlate() {
                 <span className='price'>$35.00</span>
 
                 <div className='buttons'>
-                    <a id="view" href='https://buy.stripe.com/6oE3eY29t5Offok9AA' >
+                    <a id="view" href='https://buy.stripe.com/3cs8zieWfa4v4JG3cd' >
                         <button className='add-to-cart'> Buy it Now</button></a>
                 </div>
             <p id="description">
