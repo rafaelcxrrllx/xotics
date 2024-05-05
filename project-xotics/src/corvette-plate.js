@@ -46,7 +46,7 @@ function CorvettePlate() {
                         <button className='add-to-cart'> Buy it Now</button></a>
                 </div>
             <p id="description">
-                Upgrade your car's aesthetics with our Grand Sport Forged Carbon Fiber License Plate Frame. 
+                Upgrade your car's aesthetics with our Hydro Dipped Forged Carbon Fiber License Plate Frame. 
                 Crafted from premium-grade forged carbon fiber, this frame combines lightweight construction 
                 with unmatched durability, making it a sleek and long-lasting addition to your whip. 🏎️ 💨
             </p>
