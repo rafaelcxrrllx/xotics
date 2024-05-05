@@ -23,9 +23,7 @@ function Shop() {
         transition={{ duration: 1 }} // Animation duration
           >
           <Item/> 
-          <Item/>
-          <Item/>
-          <Item/>
+
         </motion.div>
     </div>
 

@@ -32,7 +32,8 @@ function Home() {
         transition={{ duration: 1 }} // Animation duration
         id="Heading">
         <h1 className="slogan">Elevate Your Ride</h1>
-        <Link id='landing-page-link' className="Link" to="/shop"><button  id="landing-page-button"> Shop all</button></Link>
+        <Link id='landing-page-link' className="Link" to="/shop"><button  id="landing-page-button"> Shop all</button>
+        </Link>
       </motion.div>
       <Featured/>
       <Footer/>

@@ -63,15 +63,18 @@ function Landing() {
               Personalize your car with the most Xotic customs. 
           </motion.h3>
           <br/>
-          <motion.Link  
+          <Link  
             initial={{ y: '5vw', opacity: 0 }} // Initial opacity set to 0
             animate={{ y: 0, opacity: 1 }} // Animate opacity to 1
             transition={{ duration: 3 }} // Animation duration
             className="Link" to="/shop">
-            <button  
-               
+            <motion.button  
+               initial={{  opacity: 0 }} // Initial opacity set to 0
+               animate={{  opacity: 1 }} // Animate opacity to 1
+               transition={{ duration: 3 }}
               className="main-button"> Shop all
-            </button></motion.Link>
+            </motion.button>
+            </Link>
 
         </div>
     </div>
