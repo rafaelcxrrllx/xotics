@@ -13,6 +13,10 @@
     text-align: left;
 }
 
+.featured-header h4{
+  color: #32353E;
+}
+
   @media (max-width: 600px) {
 
     .featured-container {

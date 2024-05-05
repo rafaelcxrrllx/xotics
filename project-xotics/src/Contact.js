@@ -4,7 +4,7 @@ import Footer from './footer';
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import { motion } from 'framer-motion';
-
+import { Link } from 'react-router-dom';
 
 
 function Contact() {
@@ -42,6 +42,17 @@ function Contact() {
       });
   };
 
+  const [isVisible, setIsVisible] = useState(true);
+
+  const handleHide = () => {
+    setIsVisible(false);
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Smooth scrolling behavior
+      });
+
+  };
+
 
 
 
@@ -61,16 +72,38 @@ function Contact() {
              animate={{ x: 0, opacity: 1 }} // Animate opacity to 1
              transition={{ duration: 1 }} // Animation duration
                 >Contact</motion.h2>
-            <motion.p
+            <motion.h4
+                style={{display: isVisible ? 'block' : 'none', pointerEvents: isVisible ? 'none' : 'auto', position:  isVisible ? 'relative' : 'absolute'}}
                  initial={{ y: '1vw', opacity: 0 }} // Initial opacity set to 0
-                 animate={{ y: 0, opacity: 1 }} // Animate opacity to 1
-                 transition={{ duration: 1 }}>Got an Exotic request? Shoot us a message and we will get back to you soon.</motion.p>
+                 animate={{ y: 0, opacity: isVisible ? 1 : 0 }} // Animate opacity to 1
+                 transition={{ duration: isVisible ? 1 : 0 }}>Got an Xotic request? Shoot us a message and we will get back to you soon.</motion.h4>
         </div>
 
-        <motion.form onSubmit={handleSubmit}  
+        <div 
+            style={{display: isVisible ? 'none' : 'block', pointerEvents: isVisible ? 'none' : 'auto', position:  isVisible ? 'absolute' : 'relative'}}
+            className='message-confirmed-header'>    
+            <motion.h4
+                 initial={{ y: '1vw', opacity: 0 }} // Initial opacity set to 0
+                 animate={{ y: 0, opacity: isVisible ? 0 : 1 }} // Animate opacity to 1
+                 transition={{ duration: 1 }}> Message has been sent. We will get back to you soon.</motion.h4>
+             
+             <Link className="Link" to="/shop">
+                <motion.button
+              initial={{ y: '1vw', opacity: 0 }} // Initial opacity set to 0
+              animate={{ y: 0, opacity: isVisible ? 0 : 1 }} // Animate opacity to 1
+              transition={{ duration: 1 }}
+                className='second-button'> 
+            Keep Shopping
+        </motion.button>
+        </Link>
+        </div>
+
+        <motion.form 
+            style={{display: isVisible ? 'block' : 'none', pointerEvents: isVisible ? 'auto' : 'none'}}
+            onSubmit={handleSubmit}  
             initial={{ y: '1vw', opacity: 0 }} // Initial opacity set to 0
-            animate={{ y: 0, opacity: 1 }} // Animate opacity to 1
-            transition={{ duration: 1 }}> 
+            animate={{ y: 0, opacity: isVisible ? 1 : 0 }} // Animate opacity to 1
+            transition={{duration: isVisible ? 1 : 0 }}> 
 
         <div className='contact'>
             <input
@@ -112,12 +145,12 @@ function Contact() {
             name="message"
             className='text-entry'/>
         </div>
-        <button type="submit" className='main-button'> Send</button>
+        <motion.button onClick={handleHide} type="submit" className='main-button'> 
+            Send
+        </motion.button> 
         </motion.form>
-
-
-        
     </div>
+    
 
     <Footer/>
     </div>

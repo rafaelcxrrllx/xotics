@@ -13,6 +13,7 @@
     background-color: white;
 }
 
+
 .contact-container {
     background-color: #fff;
     padding-left: 20%;
@@ -23,6 +24,52 @@
 }
 
 
+.message-confirmed-header {
+    position: absolute;
+    padding-left: 0%;
+    padding-right: 15%;
+    margin-top: 0%;
+}
+
+.message-confirmed-header button {
+        width: 25vw; 
+        padding: 16px 14px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 45px;
+        color: black;
+        font-size: large;
+        border-style: none;
+        border-color: #000;
+        border-style: solid;
+        background-color: white;
+        margin-bottom: 20px;
+        margin-top: 30px;
+        transition: transform 0.3s ease-in-out;
+        display: flex;
+        width: fit-content;
+    
+}
+
+.message-confirmed-header button:hover {
+    color: white;
+    border-style: solid;
+    border-color: white;
+    background-color: #158CA4;
+}
+
+.message-confirmed-header h4{
+    color: #32353E;
+}
+
+
+.header h2 {
+    color: #158CA4;
+}
+
+.header h4 {
+    color: #32353E;
+}
 
 
 .contact {
@@ -63,6 +110,11 @@
         text-align: left;
         padding-bottom: 7%;
     }
+    .message-confirmed-header button {
+        width: 50vw; 
+    }
+
+    
     
 
     
