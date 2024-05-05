@@ -38,7 +38,7 @@ function CorvettePlate() {
                      initial={{ x: '5vw', opacity: 0 }}
                      animate={{ x: 0 , opacity: 1 }} // Animate opacity based on inView status
                      transition={{ duration: 1 }} 
-                    >Grand Sport Forged Carbon Fiber License Plate Frame</motion.h2>
+                    >Hydro Dipped Forged Carbon Fiber License Plate Frame</motion.h2>
                 <span className='price'>$30.00</span>
 
                 <div className='buttons'>
