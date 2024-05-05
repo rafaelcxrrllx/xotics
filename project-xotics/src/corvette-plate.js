@@ -6,6 +6,8 @@ import Footer from './footer';
 import Carousel from './Carousel';
 import ShareButton from './ShareButton';
 import './styles.css'
+import { motion } from 'framer-motion';
+import { useInView } from 'framer-motion';
 
 function CorvettePlate() {
     const images = [
@@ -14,26 +16,41 @@ function CorvettePlate() {
         // Add more image URLs as needed
       ];
 
+      const { ref, inView } = useInView({
+        threshold: 0.5, // Set the threshold to 0.5 for when to trigger the animation
+        triggerOnce: false, // Ensure the animation only triggers once
+      });
+
   return (
     
     <div >
         <Nav/>
+        
         <div className='corvette-plate-container'>
         <Carousel  id="image" images={images} /> 
 
-            <div className='corvette-plate-text'>
-                <h2>Grand Sport Forged Carbon Fiber License Plate Frame</h2>
+            <motion.div 
+              initial={{  opacity: 0 }}
+              animate={{ opacity: 1  }} // Animate opacity based on inView status
+              transition={{ duration: 2 }} // Animation duration
+                className='corvette-plate-text'>
+                <motion.h2
+                     initial={{ x: '5vw', opacity: 0 }}
+                     animate={{ x: 0 , opacity: 1 }} // Animate opacity based on inView status
+                     transition={{ duration: 1 }} 
+                    >Grand Sport Forged Carbon Fiber License Plate Frame</motion.h2>
                 <span className='price'>$30.00</span>
 
                 <div className='buttons'>
-                    <a id="view" href='https://buy.stripe.com/6oE3eY29t5Offok9AA' ><button className='add-to-cart'> Buy it Now</button></a>
+                    <a id="view" href='https://buy.stripe.com/6oE3eY29t5Offok9AA' >
+                        <button className='add-to-cart'> Buy it Now</button></a>
                 </div>
             <p id="description">
                 Upgrade your car's aesthetics with our Grand Sport Forged Carbon Fiber License Plate Frame. 
                 Crafted from premium-grade forged carbon fiber, this frame combines lightweight construction 
                 with unmatched durability, making it a sleek and long-lasting addition to your whip. 🏎️ 💨
             </p>
-            </div>
+            </motion.div>
         </div>
         <Footer/>
     </div>

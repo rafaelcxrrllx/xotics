@@ -7,8 +7,11 @@ footer {
     text-align: center;
 }
 
+footer h2, h4 {
+    color: #fff;
+}
+
 #copyright {
-    color: white;
     padding-bottom: 50px;
 }
 
@@ -19,7 +22,6 @@ footer {
 
 footer a {
     text-decoration: none;
-    color: white;
 }
 
 footer a:hover {

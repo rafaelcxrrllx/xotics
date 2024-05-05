@@ -63,6 +63,14 @@
     background-color: white;
     margin-bottom: 20px;
     margin-top: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.add-to-cart:hover {
+    color: white;
+    border-style: solid;
+    border-color: white;
+    background-color: #158CA4;
 }
 
 #description {
