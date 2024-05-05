@@ -29,7 +29,7 @@ function Footer() {
       <div className='logo-img'>
         <img src={logo} alt="logo of Xotic Dip"/>
       </div>
-        <h2>Stay Exotic</h2>
+        <h2>Stay Xotic</h2>
         <h4>Be the first to know about new collections and exclusive offers.</h4>
 
       </div>
