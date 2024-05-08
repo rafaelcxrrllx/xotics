@@ -11,7 +11,10 @@ function About() {
   return (
     <div className="home-container">
       <Nav/>
-      <VideoPlayer/>
+      <div className='video-container'>
+        <VideoPlayer/>
+      </div>
+     
         <div className='hero-image'>
         <motion.img 
           initial={{ y: '3vw', opacity: 0 }} // Initial opacity set to 0

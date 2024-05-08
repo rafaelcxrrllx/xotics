@@ -71,7 +71,7 @@ function Landing() {
             <motion.button  
                initial={{  opacity: 0 }} // Initial opacity set to 0
                animate={{  opacity: 1 }} // Animate opacity to 1
-               transition={{ duration: 3 }}
+               transition={{ duration: 2 }}
               className="main-button"> Shop all
             </motion.button>
             </Link>
