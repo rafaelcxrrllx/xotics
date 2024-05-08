@@ -5,11 +5,13 @@ import Nav from './Nav';
 import hero from './assets/hero-image.jpg';
 import Footer from './footer';
 import { motion } from 'framer-motion';
+import VideoPlayer from './VideoPlayer';
 
 function About() {
   return (
     <div className="home-container">
       <Nav/>
+      <VideoPlayer/>
         <div className='hero-image'>
         <motion.img 
           initial={{ y: '3vw', opacity: 0 }} // Initial opacity set to 0
