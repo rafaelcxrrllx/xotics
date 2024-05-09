@@ -1,8 +1,10 @@
 {
   "files": {
-    "main.css": "/xotics/static/css/main.becbae24.css",
-    "main.js": "/xotics/static/js/main.30c5afa2.js",
+    "main.css": "/xotics/static/css/main.04ed3471.css",
+    "main.js": "/xotics/static/js/main.29d527bc.js",
     "static/js/453.1b8f7bdd.chunk.js": "/xotics/static/js/453.1b8f7bdd.chunk.js",
+    "static/media/dipping-action-4.mp4": "/xotics/static/media/dipping-action-4.eeed09f7aa4a42205416.mp4",
+    "static/media/dipping-action-5.mp4": "/xotics/static/media/dipping-action-5.614c1ee365037b1b2b61.mp4",
     "static/media/hero-image.jpg": "/xotics/static/media/hero-image.bd4b4b8f5a018396ce48.jpg",
     "static/media/pan-after.jpg": "/xotics/static/media/pan-after.77cdb25de7c5b6b36287.jpg",
     "static/media/tacoma.jpg": "/xotics/static/media/tacoma.2eca3d9cc5419b605edc.jpg",
@@ -18,12 +20,12 @@
     "static/media/logo-vector.svg": "/xotics/static/media/logo-vector.8e8df83b11a0235251f312c8ed2d2f00.svg",
     "static/media/instagram.svg": "/xotics/static/media/instagram.27d1ceca6b70dbfaa68c55339fb5f67c.svg",
     "index.html": "/xotics/index.html",
-    "main.becbae24.css.map": "/xotics/static/css/main.becbae24.css.map",
-    "main.30c5afa2.js.map": "/xotics/static/js/main.30c5afa2.js.map",
+    "main.04ed3471.css.map": "/xotics/static/css/main.04ed3471.css.map",
+    "main.29d527bc.js.map": "/xotics/static/js/main.29d527bc.js.map",
     "453.1b8f7bdd.chunk.js.map": "/xotics/static/js/453.1b8f7bdd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.becbae24.css",
-    "static/js/main.30c5afa2.js"
+    "static/css/main.04ed3471.css",
+    "static/js/main.29d527bc.js"
   ]
 }
