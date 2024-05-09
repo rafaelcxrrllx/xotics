@@ -39,7 +39,7 @@ video {
 
 @media (max-width: 600px) { 
     video {
-        width: 400px;
+        width: 300px;
     }
 
     .video-container {
