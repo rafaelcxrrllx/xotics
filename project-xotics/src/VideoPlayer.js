@@ -15,11 +15,11 @@ function VideoPlayer() {
         <source src={dipvideo1} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className='video-text'>
-        <h1>
-          Dip your World <br/><span id='xotic'>Exotic</span>
+      <div className='video-text-container'>
+        <h1 className='video-text'>
+          Dip your World <br/><span id='xotic'>Xotic</span>
         </h1>
-        <h3>
+        <h3 className='video-text'>
           From plates to parts we can upgrade your whip ☣️
         </h3>
         <p>

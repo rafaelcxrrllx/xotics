@@ -12,16 +12,64 @@ video {
     width: 100%;
     padding-bottom: 3%;
     padding-top: 2%;
+    align-items: center;
     justify-content: space-evenly;
 
 }
 
-.video-text h1, h3, p{
+.video-text-container {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.video-text {
     color: #fff;
+    line-height: 2;
 }
 
 
-.video-text p{
+.video-text-container p{
+    margin-bottom: 5%;
     line-height: 2;
-    padding-bottom: 10%;
+    color: #fff;
+}
+
+@media (max-width: 600px) { 
+    video {
+        width: 400px;
+    }
+
+    .video-container {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .video-text-container {
+        margin-left: 7%;
+        margin-right: 7%;
+        margin-right: 0%;
+        text-align: left;
+        margin-bottom: 20%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    video {
+        width: 400px;
+    }
+
+    .video-container {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .video-text-container {
+        margin-left: 7%;
+        margin-right: 7%;
+        margin-right: 0%;
+        text-align: left;
+        margin-bottom: 20%;
+    }
 }
