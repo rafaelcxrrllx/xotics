@@ -28,6 +28,7 @@ function VideoPlayer() {
         transition={{ duration: 1 }}
         width="320" 
         height="240" 
+        controls={false}
         autoPlay muted loop>
         <source src={dipvideo1} type="video/mp4" />
         Your browser does not support the video tag.
@@ -79,6 +80,7 @@ function VideoPlayer() {
         transition={{ duration: 1 }}
         width="320" 
         height="240" 
+        controls={false}
         autoPlay muted loop>
         <source src={dipvideo2} type="video/mp4" />
         Your browser does not support the video tag.
