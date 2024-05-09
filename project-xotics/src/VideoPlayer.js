@@ -18,6 +18,8 @@ function VideoPlayer() {
 
   const scrollRef = useRef(null)
 
+
+
   return (
     <div className='video-container'>
       <motion.video 
