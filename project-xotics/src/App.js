@@ -4,6 +4,7 @@ import Shop from './shop';
 import Home from './Home';
 import Contact from './Contact';
 import About from './About';
+import Customize from './Customize';
 import CorvettePlate from './corvette-plate';
 import ScrollToTop from './ScrollToTop';
 import { useEffect } from 'react';
@@ -30,6 +31,7 @@ function App() {
         <Route path='/home' element={<Home/>}/>
         <Route path='/Contact' element={<Contact/>}/>
         <Route path='/About' element={<About/>}/>
+        <Route path='/Customize' element={<Customize/>}/>
         <Route path='/corvette-plate' element={<CorvettePlate/>}/>
       </Routes>
     </HashRouter>

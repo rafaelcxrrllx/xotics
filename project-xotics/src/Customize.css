@@ -1,0 +1,29 @@
+.customize-container {
+    background-color: #fff;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+    text-align: left;
+    padding-bottom: 7%;
+}
+
+
+.xotic-frame {
+    width: 100%;
+}
+
+.frame-container {
+    display: flex;
+}
+
+.colors{
+   display: block;
+   padding-left: 5%;
+}
+
+.colors img{
+    width: 75px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    
+}

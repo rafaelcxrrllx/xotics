@@ -25,6 +25,7 @@ function Nav() {
             <ul className="nav-links">
                     
                 <Link className="Link"  to="/Shop"><li className='links'><a href='./shop'>Shop</a></li></Link>
+                <Link className='Link' to="/Customize"><li className='links'><a href='./Customize'>Customize</a></li></Link>
                 <Link className="Link"  to="/Contact"><li className='links'><a href='./Contact'>Contact</a></li></Link>
                 <Link className='Link' to="/About"><li className='links'><a href='./shop'>About</a></li></Link>
                 <HamburgerMenu/>

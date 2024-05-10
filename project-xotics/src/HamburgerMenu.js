@@ -22,6 +22,7 @@ const HamburgerMenu = () => {
         <Link className="Link"  to="/Shop"><li><a href='./shop'>Shop</a></li></Link>
         <Link className="Link"  to="/Contact"><li><a href='./contact'>Contact</a></li></Link>
         <Link  className="Link"  to="/About"><li><a href='./about'>About</a></li></Link>
+        <Link  className="Link"  to="/Customize"><li><a href='./customize'>Customize</a></li></Link>
       </ul>
     </div>
 
