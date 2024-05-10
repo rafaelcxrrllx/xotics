@@ -27,3 +27,13 @@
     padding-bottom: 20px;
     
 }
+
+.displayed-text {
+    position: fixed;
+    left: 0;
+    margin-left: 260px;
+}
+
+.displayed-text h2 {
+    color: #fff;
+}

@@ -23,63 +23,86 @@ import pink from './assets/frames/colors/pink.svg'
 
 const Customize = () => {
 
-    const [imageUrl, setImageUrl] = useState(xoticplate); // Initial image URL
+  const [imageUrl, setImageUrl] = useState(xoticplate); // Initial image URL
 
-    const changeRed = () => {
-        // Change the image URL
-        setImageUrl(redPlate);
-      };
-    const changePink = () => {
-    // Change the image URL
+  const changeRed = () => {
+      // Change the image URL
+    setImageUrl(redPlate);
+  };
+
+  const changePink = () => {
+  // Change the image URL
     setImageUrl(pinkPlate);
-    };
+  };
 
-    const changeBlack = () => {
-        // Change the image URL
-        setImageUrl(blackPlate);
-      };
-    const changePurple = () => {
-    // Change the image URL
+  const changeBlack = () => {
+      // Change the image URL
+    setImageUrl(blackPlate);
+  };
+
+  const changePurple = () => {
+  // Change the image URL
     setImageUrl(purplePlate);
-    };
+  };
 
-    const changeBlue = () => {
-        // Change the image URL
-        setImageUrl(bluePlate);
-        };
+  const changeBlue = () => {
+      // Change the image URL
+    setImageUrl(bluePlate);
+  };
 
-        const changeWhite = () => {
-            // Change the image URL
-            setImageUrl(whitePlate);
-          };
-        const changeGreen = () => {
-        // Change the image URL
-        setImageUrl(greenPlate);
-        };
+  const changeWhite = () => {
+      // Change the image URL
+      setImageUrl(whitePlate);
+  };
+
+  const changeGreen = () => {
+  // Change the image URL
+    setImageUrl(greenPlate);
+  };
     
-        const changeYellow = () => {
-            // Change the image URL
-            setImageUrl(yellowPlate);
-            };
+  const changeYellow = () => {
+      // Change the image URL
+      setImageUrl(yellowPlate);
+  };
+
+  const [name, setName] = useState('');
+
+
+  const [displayedText, setDisplayedText] = useState('');
+        
+        
+  const handleName = (event) => {
+      setName(event.target.value);
+  };
+        
+  const retrieveText = () => {
+    setDisplayedText(name);
+  };
+        
+      
 
   return (
     <div>
         <Nav/>
         <div  className='customize-container'>
 
-        <div className='header'>    
-                <motion.h2
-                initial={{ x: '-3vw'}} // Initial opacity set to 0
-                animate={{ x: 0, opacity: 1 }} // Animate opacity to 1
-                transition={{ duration: 1 }} // Animation duration
-                    >Customize</motion.h2>
-                <motion.h4
-                initial={{ y: '1vw', opacity: 0 }} // Initial opacity set to 0
-                animate={{ y: 0, opacity: 1 }} // Animate opacity to 1
-                transition={{ duration: 1}}>Create your own Xotic plate frame.</motion.h4>
-            </div>
+          <div className='header'>    
+              <motion.h2
+              initial={{ x: '-3vw'}} // Initial opacity set to 0
+              animate={{ x: 0, opacity: 1 }} // Animate opacity to 1
+              transition={{ duration: 1 }} // Animation duration
+                  >Customize</motion.h2>
+              <motion.h4
+              initial={{ y: '1vw', opacity: 0 }} // Initial opacity set to 0
+              animate={{ y: 0, opacity: 1 }} // Animate opacity to 1
+              transition={{ duration: 1}}>Create your own Xotic plate frame.</motion.h4>
+          </div>
+
             <div  className='frame-container'>
-                <img className='xotic-frame' src={imageUrl} alt="Xotic Dip themed plate frame"/>
+              <img className='xotic-frame' src={imageUrl} alt="Xotic Dip themed plate frame"/>
+              <div className='displayed-text'> 
+                <h2>{displayedText}</h2>
+              </div>
                 <div className='colors'>
                     <img onClick={changeRed} src={black} alt="Xotic Dip themed plate frame"/>
                     <img onClick={changePink} src={pink} alt="Xotic Dip themed plate frame"/>
@@ -89,10 +112,27 @@ const Customize = () => {
                     <img onClick={changeWhite} src={white} alt="Xotic Dip themed plate frame"/>
                     <img onClick={changeGreen} src={green} alt="Xotic Dip themed plate frame"/>
                     <img onClick={changeYellow} src={yellow} alt="Xotic Dip themed plate frame"/>
+                    <motion.form 
+                    // onSubmit={handleSubmit}  
+                    initial={{ y: '1vw', opacity: 0 }} // Initial opacity set to 0
+                    animate={{ y: 0, opacity: 1 }} // Animate opacity to 1
+                    transition={{duration: 1 }}> 
+
+                    <div className='contact'>
+                      <input
+                      type="text"
+                      value={name}
+                      onChange={handleName}
+                      placeholder="Text"
+                      name="from_name"
+                      className='text-entry'/>
+                      </div>
+                    <button onClick={retrieveText}> Retrieve Text</button>  
+                  </motion.form>
                 </div>        
-            </div>
-        </div>
-    <Footer/>
+              </div>
+          </div>
+      <Footer/>
     </div>
   );
 };
